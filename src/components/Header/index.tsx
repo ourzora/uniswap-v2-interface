@@ -127,7 +127,7 @@ const BalanceText = styled(Text)`
 `
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
-  [ChainId.ZORA]: 'Zora',
+  [ChainId.ZORA]: '',
   [ChainId.MAINNET]: 'Mainnet'
 }
 

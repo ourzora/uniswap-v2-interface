@@ -94,9 +94,9 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://uniswap.org/">
+          <MenuItem id="link" href="/#/disclaimers">
             <Info size={14} />
-            About
+            Legal
           </MenuItem>
           <MenuItem id="link" href="https://uniswap.org/docs/v2">
             <BookOpen size={14} />
