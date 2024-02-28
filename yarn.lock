@@ -2574,10 +2574,10 @@
   resolved "https://registry.yarnpkg.com/@uniswap/lib/-/lib-1.1.1.tgz#0afd29601846c16e5d082866cbb24a9e0758e6bc"
   integrity sha512-2yK7sLpKIT91TiS5sewHtOa7YuM8IuBXVl4GZv2jZFys4D2sY7K5vZh6MqD25TPA95Od+0YzCVq6cTF2IKrOmg==
 
-"@uniswap/sdk@3.0.3-beta.1":
-  version "3.0.3-beta.1"
-  resolved "https://registry.yarnpkg.com/@uniswap/sdk/-/sdk-3.0.3-beta.1.tgz#ef758f45e1f7050e098956fce097aedb87e0ceed"
-  integrity sha512-8MqfVDXAHHcAnUxBAaoHdeGmLUc8Tu4GZ4n7kLabKlF2b4RUS/jnuUIdzOR9QPMdY/avw3gH/OtTxH2elDNShw==
+"@uniswap/sdk@npm:@zoralabs/uniswap-v2-sdk@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@zoralabs/uniswap-v2-sdk/-/uniswap-v2-sdk-3.0.3.tgz#75f9b6b2e949b4d32d689dd17526ed5c5d6bc4cd"
+  integrity sha512-s0aX8goVBo1ZS2fyXnYLQpDPH7Lkty6IDUr4j+WdEvXXRakHeXyOzdVbRfNnnr60xhYDQPhm1mlWNMlGIs3sSg==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
