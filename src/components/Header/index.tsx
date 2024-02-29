@@ -20,6 +20,9 @@ import Menu from '../Menu'
 import Row, { RowBetween } from '../Row'
 import Web3Status from '../Web3Status'
 import VersionSwitch from './VersionSwitch'
+import Modal from '../Modal'
+import useDisclaimers from '../../hooks/useDisclaimers'
+import { ButtonPrimary } from '../Button'
 
 const HeaderFrame = styled.div`
   display: flex;
@@ -133,6 +136,7 @@ const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
 
 export default function Header() {
   const { account, chainId } = useActiveWeb3React()
+  const { disclaimersAccepted, acceptDisclaimers } = useDisclaimers()
 
   const userEthBalance = useETHBalances(account ? [account] : [])?.[account ?? '']
   const [isDark] = useDarkModeManager()
@@ -170,7 +174,20 @@ export default function Header() {
             <Menu />
           </HeaderElementWrap>
         </HeaderControls>
+        <Modal isOpen={!disclaimersAccepted} onDismiss={acceptDisclaimers}>
+          <DisclaimerModalContainer>
+            <Text>
+              I confirm that I have reviewed, acknowledged and agree to the <a href="/#/disclaimers">Disclaimers</a>.
+            </Text>
+            <br />
+            <ButtonPrimary onClick={acceptDisclaimers}>Accept</ButtonPrimary>
+          </DisclaimerModalContainer>
+        </Modal>
       </RowBetween>
     </HeaderFrame>
   )
 }
+
+const DisclaimerModalContainer = styled.div`
+  padding: 20px;
+`
