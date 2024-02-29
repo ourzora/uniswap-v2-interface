@@ -178,7 +178,7 @@ export default function Header() {
         </HeaderControls>
         <Modal isOpen={!disclaimersAccepted && location.pathname !== '/disclaimers'} onDismiss={acceptDisclaimers}>
           <DisclaimerModalContainer>
-            <Text fontSize={20}>
+            <Text fontSize={20} textAlign={'center'}>
               I confirm that I have reviewed, acknowledged and agree to the <a href="/#/disclaimers">Disclaimers</a>.
             </Text>
             <br />
