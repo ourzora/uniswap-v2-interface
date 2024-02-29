@@ -4,6 +4,7 @@ import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'
 
 import styled from 'styled-components'
+import { useLocation } from 'react-router-dom'
 
 import Logo from '../../assets/svg/logo.svg'
 import LogoDark from '../../assets/svg/logo_white.svg'
@@ -22,7 +23,7 @@ import Web3Status from '../Web3Status'
 import VersionSwitch from './VersionSwitch'
 import Modal from '../Modal'
 import useDisclaimers from '../../hooks/useDisclaimers'
-import { ButtonPrimary } from '../Button'
+import { ButtonSecondary } from '../Button'
 
 const HeaderFrame = styled.div`
   display: flex;
@@ -137,6 +138,7 @@ const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
 export default function Header() {
   const { account, chainId } = useActiveWeb3React()
   const { disclaimersAccepted, acceptDisclaimers } = useDisclaimers()
+  const location = useLocation()
 
   const userEthBalance = useETHBalances(account ? [account] : [])?.[account ?? '']
   const [isDark] = useDarkModeManager()
@@ -174,13 +176,13 @@ export default function Header() {
             <Menu />
           </HeaderElementWrap>
         </HeaderControls>
-        <Modal isOpen={!disclaimersAccepted} onDismiss={acceptDisclaimers}>
+        <Modal isOpen={!disclaimersAccepted && location.pathname !== '/disclaimers'} onDismiss={acceptDisclaimers}>
           <DisclaimerModalContainer>
-            <Text>
+            <Text fontSize={20}>
               I confirm that I have reviewed, acknowledged and agree to the <a href="/#/disclaimers">Disclaimers</a>.
             </Text>
             <br />
-            <ButtonPrimary onClick={acceptDisclaimers}>Accept</ButtonPrimary>
+            <ButtonSecondary onClick={acceptDisclaimers}>Accept</ButtonSecondary>
           </DisclaimerModalContainer>
         </Modal>
       </RowBetween>
