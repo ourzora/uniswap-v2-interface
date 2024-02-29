@@ -6,7 +6,7 @@ export default function Disclaimers() {
   return (
     <Container>
       <Text fontSize={20} fontWeight={600}>
-        Open Source Uniswap Frontend - Legal Disclosures
+        Open Source Uniswap Frontend - Legal Disclaimers
       </Text>
       <br />
       <Text>
