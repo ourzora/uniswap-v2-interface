@@ -15,7 +15,7 @@ export default {
     tokens: [
         {
             "chainId": 7777777,
-            "address": "0x4200000000000000000000000000000000000042",
+            "address": "0xccCCCCC697b5Bf1536966ccB51a6AcbAd5A964f2",
             "name": "USDC Bridged (ZORA)",
             "symbol": "USDzC",
             "decimals": 6,
