@@ -1,5 +1,5 @@
 // the Uniswap Default token list lives here
-export const DEFAULT_TOKEN_LIST_URL = 'https://gist.githubusercontent.com/iainnash/d20339349c6addab665f2b1bd8cf6470/raw/zora-default-list.json'
+export const DEFAULT_TOKEN_LIST_URL = 'https://raw.githubusercontent.com/ourzora/uniswap-v2-interface/zora-support/src/constants/token-lists/zora.json'
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
   DEFAULT_TOKEN_LIST_URL,
