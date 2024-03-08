@@ -4,7 +4,10 @@ import { TokenList } from '@uniswap/token-lists/dist/types'
 import { DEFAULT_LIST_OF_LISTS, DEFAULT_TOKEN_LIST_URL } from '../../constants/lists'
 import { updateVersion } from '../global/actions'
 import { acceptListUpdate, addList, fetchTokenList, removeList, selectList } from './actions'
-import UNISWAP_DEFAULT_LIST from '@uniswap/default-token-list'
+// import UNISWAP_DEFAULT_LIST from '@uniswap/default-token-list'
+import ZORA_DEFAULT_LIST from '../../constants/token-lists/zora';
+
+console.log(ZORA_DEFAULT_LIST);
 
 export interface ListsState {
   readonly byUrl: {
@@ -22,7 +25,7 @@ export interface ListsState {
 
 const NEW_LIST_STATE: ListsState['byUrl'][string] = {
   error: null,
-  current: null,
+  current: ZORA_DEFAULT_LIST,
   loadingRequestId: null,
   pendingUpdate: null
 }
@@ -38,7 +41,7 @@ const initialState: ListsState = {
     }, {}),
     [DEFAULT_TOKEN_LIST_URL]: {
       error: null,
-      current: UNISWAP_DEFAULT_LIST,
+      current: ZORA_DEFAULT_LIST,
       loadingRequestId: null,
       pendingUpdate: null
     }
