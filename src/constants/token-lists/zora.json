@@ -6,17 +6,18 @@
     "minor": 0,
     "patch": 0
   },
-  "tags": {},
+  "tags": [],
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
   "keywords": ["uniswap", "default"],
   "tokens": [
     {
       "chainId": 7777777,
       "address": "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4",
-      "name": "USDC Bridged",
       "symbol": "USDzC",
+      "name": "USDC Bridged",
       "decimals": 6,
-      "logoURI": "https://static.optimism.io/data/USDC/logo.png"
+      "logoURI": "https://static.optimism.io/data/USDC/logo.png",
+      "tags": ["usdc", "bridged", "circle"]
     }
   ]
 }
