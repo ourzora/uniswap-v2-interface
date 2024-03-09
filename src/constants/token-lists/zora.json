@@ -6,9 +6,9 @@
     "minor": 0,
     "patch": 0
   },
-  "tags": [],
+  "tags": {},
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
-  "keywords": ["uniswap", "default"],
+  "keywords": ["zora", "default"],
   "tokens": [
     {
       "chainId": 7777777,
