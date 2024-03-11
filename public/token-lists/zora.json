@@ -1,0 +1,23 @@
+{
+  "name": "ZORA Default",
+  "timestamp": "2024-03-08T22:10:24.046Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
+  "keywords": ["zora", "default"],
+  "tokens": [
+    {
+      "chainId": 7777777,
+      "address": "0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4",
+      "symbol": "USDzC",
+      "name": "USDC Bridged",
+      "decimals": 6,
+      "logoURI": "https://static.optimism.io/data/USDC/logo.png",
+      "tags": ["usdc", "bridged", "circle"]
+    }
+  ]
+}

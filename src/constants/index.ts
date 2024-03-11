@@ -9,7 +9,7 @@ export const ROUTER_ADDRESS = '0xa00F34A632630EFd15223B1968358bA4845bEEC7'
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
-export const USDC = new Token(ChainId.ZORA, '0xccccccc697b5bf1536966ccb51a6acbad5a964f2', 6, 'USDC', 'USD//C')
+export const USDC = new Token(ChainId.ZORA, '0xCccCCccc7021b32EBb4e8C08314bD62F7c653EC4', 6, 'USDC Bridged', 'USDzC')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
